@@ -19,3 +19,4 @@ class Profile(models.Model):
 			img.thumbnail(output_size)
 			img = img.rotate(270, PIL.Image.NEAREST, expand = 1)
 			img.save(self.image.path)			
+ 
